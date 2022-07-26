@@ -8,6 +8,7 @@ puts "----------"
 # @store1 = Store.first
 @store1 = Store.find_by(id: 1)
 @store2 = Store.find_by(id: 2)
-@store1.update(name: 'Store')
-# @store1.name = "Yoo"
+# @store1.update(name: 'Store')
+@store1.name = "Yoo"
+@store1.save
 puts @store1.name
